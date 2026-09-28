@@ -6,7 +6,7 @@
   <title>DLS Chat — One Dollar Launch Shop</title>
   <meta name="description" content="DLS Chat is the real-time messaging and community app from One Dollar Launch Shop. Direct messages, group chats, communities, official announcements and an in-app coin wallet.">
   <meta property="og:title" content="DLS Chat — One Dollar Launch Shop">
-  <meta property="og:description" content="Chat, join communities and earn OneDollar Coins as you message.">
+  <meta property="og:description" content="DLS Chat is the real-time messaging and community app from One Dollar Launch Shop. Direct messages, group chats, communities, official announcements and an in-app coin wallet.">
   <meta property="og:image" content="assets/bg.jpeg">
   <meta name="theme-color" content="#07070c">
   <link rel="icon" href="assets/favicon.png">
@@ -15,20 +15,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
   <header class="nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="#top">
+      <a class="brand" href="index.html">
         <img src="assets/logo.jpeg" alt="" width="36" height="36">
         <span>DLS <em>Chat</em></span>
       </a>
-      <nav class="nav-links" aria-label="Main">
-        <a href="#features">Features</a>
-        <a href="#communities">Communities</a>
-        <a href="#wallet">Wallet</a>
-        <a href="#faq">FAQ</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a href="features.html">Features</a>
+        <a href="rewards.html">Rewards</a>
+        <a href="guidelines.html">Guidelines</a>
+        <a href="support.html">Support</a>
+        <a class="btn btn-gold btn-sm" href="index.html#get-started">Get started</a>
       </nav>
     </div>
   </header>
@@ -68,6 +73,7 @@
       <div class="wrap">
         <p class="eyebrow">Features</p>
         <h2>Everything you need to stay connected</h2>
+        <a class="link more" href="features.html">Explore all features →</a>
         <div class="grid cards">
           <article class="card">
             <div class="ico" aria-hidden="true">💬</div>
@@ -76,8 +82,8 @@
           </article>
           <article class="card">
             <div class="ico" aria-hidden="true">👥</div>
-            <h3>Group chats</h3>
-            <p>Bring friends, teams or clients together in shared conversations that stay in sync on every device.</p>
+            <h3>Community chats</h3>
+            <p>Talk with everyone in a community in shared conversations that stay in sync on every device.</p>
           </article>
           <article class="card">
             <div class="ico" aria-hidden="true">⚡</div>
@@ -110,15 +116,15 @@
           <p class="eyebrow">Communities</p>
           <h2>Find your people</h2>
           <p class="lead">
-            Browse and join public communities, or create your own in seconds.
-            Every community has a name, icon, description and guidelines, so
-            members know what it's about before they join.
+            Browse communities by category and join the ones you like with a tap.
+            Every community has a name, icon and description, so you know what
+            it's about before you join.
           </p>
           <ul class="checks">
             <li><strong>Public or private</strong> — public communities appear in Discover; private ones are hidden and invite-only.</li>
             <li><strong>Announcement channels</strong> — make a community admin-only so important updates never get buried.</li>
             <li><strong>Official DLS communities</strong> — news and updates straight from the One Dollar Launch Shop team.</li>
-            <li><strong>Member tools</strong> — community admins can promote, remove and manage members.</li>
+            <li><strong>Well moderated</strong> — admins can manage members and keep every community on topic.</li>
           </ul>
         </div>
         <div class="tag-panel" aria-label="Community categories">
@@ -156,6 +162,7 @@
             <li><strong>Withdraw your way</strong> — request a payout by PayPal, bank transfer or USDT (BEP-20) once you reach the $100 minimum.</li>
             <li><strong>Reviewed by admins</strong> — each withdrawal request is checked and approved by the DLS team.</li>
           </ul>
+          <a class="link more" href="rewards.html">How rewards work →</a>
         </div>
       </div>
     </section>
@@ -168,7 +175,7 @@
         <div class="grid three">
           <article class="card flat">
             <h3>Verified accounts</h3>
-            <p>Sign up with email verification and confirm your phone number with a one-time code.</p>
+            <p>Every account is confirmed by email, and you can also sign in with a one-time code sent to your phone.</p>
           </article>
           <article class="card flat">
             <h3>Protected data</h3>
@@ -196,7 +203,7 @@
           <li>
             <span class="num">2</span>
             <h3>Join the conversation</h3>
-            <p>Message people directly, start a group, or explore communities by category.</p>
+            <p>Message people directly, or explore and join communities by category.</p>
           </li>
           <li>
             <span class="num">3</span>
@@ -214,7 +221,7 @@
         <h2>Common questions</h2>
         <details>
           <summary>Is DLS Chat free to use?</summary>
-          <p>Yes. Creating an account, messaging, and joining or creating communities are all free.</p>
+          <p>Yes. Creating an account, messaging and joining communities are all free.</p>
         </details>
         <details>
           <summary>What are OneDollar Coins?</summary>
@@ -229,28 +236,50 @@
           <p>Only that community's admins. Members can read everything, which keeps important updates easy to find.</p>
         </details>
         <details>
-          <summary>Can I make a private community?</summary>
-          <p>Yes. Private communities are hidden from Discover, and only people you add can join.</p>
+          <summary>Can I create my own community?</summary>
+          <p>Communities are created and run by the DLS team, so everything stays organised. Have an idea for one? Message an admin from the Community tab.</p>
         </details>
         <details>
           <summary>Which devices are supported?</summary>
           <p>DLS Chat runs on iPhone, iPad and Android, and follows your device's light or dark mode.</p>
         </details>
+        <a class="link more" href="support.html">Visit the help centre →</a>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="wrap footer-inner">
-      <a class="brand" href="#top">
-        <img src="assets/logo.jpeg" alt="" width="32" height="32">
-        <span>DLS <em>Chat</em></span>
-      </a>
-      <p>&copy; <span id="year">2026</span> One Dollar Launch Shop. All rights reserved.</p>
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.jpeg" alt="" width="32" height="32">
+          <span>DLS <em>Chat</em></span>
+        </a>
+        <p>Real-time chat, communities and rewards from One Dollar Launch Shop.</p>
+      </div>
+      <div>
+        <h4>App</h4>
+        <a href="features.html">Features</a>
+        <a href="rewards.html">Rewards &amp; wallet</a>
+        <a href="index.html#get-started">Get started</a>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <a href="guidelines.html">Guidelines</a>
+        <a href="support.html">Help &amp; support</a>
+        <a href="support.html#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of service</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span class="year">2026</span> One Dollar Launch Shop. All rights reserved.</p>
     </div>
   </footer>
 
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
